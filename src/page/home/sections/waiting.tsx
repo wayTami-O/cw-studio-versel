@@ -35,7 +35,7 @@ function Waiting() {
                 </div>
 
             </div>
-            <a href="#" className="px-[2rem] h-[4.25rem] bg-[#13151d] rounded-[0.75rem] text-[1.125rem] text-white flex items-center w-fit max-md:w-full max-md:justify-center">Хочу в команду</a>
+            <a href="#" className="px-[2rem] h-[4.25rem] bg-[#13151d] rounded-[0.75rem] text-[1.125rem] text-white flex items-center w-fit max-md:w-full max-md:justify-center hover:bg-[#363636] transition-all ease-out duration-300 cursor-pointer">Хочу в команду</a>
         </div>
     );
 }

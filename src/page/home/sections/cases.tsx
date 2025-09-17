@@ -72,7 +72,7 @@ function Cases() {
                     </div>
                 </div>
             </div>
-            <button className="mt-[3.5rem] mx-auto h-[4.25rem] px-[2rem] border-[0.0625rem] border-[#13151d29] rounded-[0.75rem] text-[1.125rem] max-md:w-full">Показать ещё</button>
+            <button className="mt-[3.5rem] mx-auto h-[4.25rem] px-[2rem] border-[0.0625rem] border-[#13151d29] rounded-[0.75rem] text-[1.125rem] max-md:w-full hover:bg-[#13151d] hover:text-white transition-all ease-out duration-300">Показать ещё</button>
         </div>
     );
 }

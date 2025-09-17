@@ -34,7 +34,7 @@ function BestStudio() {
                     </div>
                 </div>
                 <p className="mb-[3.5rem] text-[#13151db3] text-[1.25rem]">Наши проекты постоянно отмечают международные и российские эксперты. Мы обучаем специалистов и растем в среднем на 45% каждый год.</p>
-                <button className="h-[4.25rem] rounded-[0.75rem] border-[0.0625rem] border-[#13151d29] px-[2rem] w-fit max-md:w-full">Подробнее о нас</button>
+                <button className="h-[4.25rem] rounded-[0.75rem] border-[0.0625rem] border-[#13151d29] px-[2rem] w-fit max-md:w-full hover:bg-[#13151d] hover:text-white transition-all ease-out duration-300">Подробнее о нас</button>
             </div>
             <div className="relative rounded-[2rem] overflow-hidden min-w-[55rem] after:absolute after:w-full after:h-full after:bg-[rgba(19,21,29,0.4)] after:top-0 after:left-0 max-md:!min-w-[21.4375rem] max-md:!w-[21.4375rem] max-md:h-[25rem]">
                 <Image 

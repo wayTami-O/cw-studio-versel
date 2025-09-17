@@ -74,7 +74,7 @@ function RootLayout({ children }: { children: React.ReactNode }) {
         <Script  strategy="afterInteractive" id="tg-web" src="https://telegram.org/js/telegram-web-app.js"/>
       </head>
       <body
-        className={cn(gilroy.variable, gilroy.className, `antialiased`)}
+        className={cn(gilroy.variable, gilroy.className, `antialiased`) + ` overflow-x-hidden `}
       >
         {children}
       </body>

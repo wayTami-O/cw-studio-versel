@@ -25,7 +25,7 @@ function Footer() {
                             <p className="text-[1.5rem] text-white leading-[2rem] font-semibold">Москва</p>
                             <p className="text-[1.125rem] text-white leading-[2rem] tracking-[-.03em]">Пресненская набережная, 8с1, башня «Москва», 58 этаж, офис 581</p>
                         </div>
-                        <button className="bg-white px-[2rem] rounded-[0.75rem] flex items-center h-[4.25rem] text-[#13151d] text-[1.125rem] w-fit font-semibold max-md:order-4 max-md:w-full max-md:justify-center">Обсудить проект</button>
+                        <button className="bg-white px-[2rem] rounded-[0.75rem] flex items-center h-[4.25rem] text-[#13151d] text-[1.125rem] w-fit font-semibold max-md:order-4 max-md:w-full max-md:justify-center hover:bg-[#e4e4e4] transition-all ease-out duration-300 cursor-pointer">Связаться с нами</button>
                         <div className="flex flex-col gap-[0.5rem] max-md:order-3">
                             <p className="text-[1.5rem] text-white leading-[2rem] font-semibold">Тамбов</p>
                             <p className="text-[1.125rem] text-white leading-[2rem] tracking-[-.03em]">Максима Горького, 17 БЦ Галерея</p>
