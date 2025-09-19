@@ -8,6 +8,7 @@ import Programming from "./sections/programming";
 import Waiting from "./sections/waiting";
 import Contacts from "./sections/contacts";
 import Footer from "./sections/footer";
+import Form from "./sections/form";
 
 export function HomePage() {
   return (
@@ -21,6 +22,7 @@ export function HomePage() {
       <Programming />
       <Waiting />
       <Contacts />
+      <Form />
       <Footer />
     </>
   );
