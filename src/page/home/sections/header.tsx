@@ -5,7 +5,7 @@ import { useState } from "react";
 
 function Header() {
 
-    const [open, setOpen] = useState<boolean>(true)
+    const [open, setOpen] = useState<boolean>(false)
 
     return (
         <>
