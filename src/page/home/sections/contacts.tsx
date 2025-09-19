@@ -1,6 +1,6 @@
 function Contacts() {
     return (
-        <div className="container flex flex-col gap-[2rem]">
+        <div id="contacts" className="container flex flex-col gap-[2rem]">
             <h2 className="text-[3.125rem] text-[#13151d] font-semibold">Контакты</h2>
             <div className="grid grid-cols-4 gap-[2.5rem] max-md:grid-cols-1">
                 <div className="w-full flex flex-col gap-[0.5rem]">
@@ -16,7 +16,7 @@ function Contacts() {
                     <a href="#" className="text-[1.5rem] text-[#13151d] tracking-[-.03em] leading-[2rem] font-semibold">Пресненская набережная, 8с1, башня «Москва», 58 этаж, офис 581</a>
                 </div>
                 <div className="w-full flex flex-col gap-[0.5rem] col-span-2 max-md:col-span-1 max-md:order-5">
-                    <button className="bg-[#8b73ff] px-[2rem] rounded-[0.75rem] flex items-center h-[4.25rem] text-white text-[1.125rem] w-fit font-semibold max-md:w-full max-md:justify-center hover:bg-[#7d63ff] transition-all ease-out duration-300 cursor-pointer">Обсудить проект</button>
+                    <a href="#contact-form" className="bg-[#8b73ff] px-[2rem] rounded-[0.75rem] flex items-center h-[4.25rem] text-white text-[1.125rem] w-fit font-semibold max-md:w-full max-md:justify-center hover:bg-[#7d63ff] transition-all ease-out duration-300 cursor-pointer">Обсудить проект</a>
                 </div>
                 <div className="w-full flex flex-col gap-[0.5rem] col-span-2 max-md:col-span-1 max-md:order-4">
                     <p className="text-[#13151db3] text-[1.125rem]">Тамбов</p>

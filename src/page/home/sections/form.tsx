@@ -36,14 +36,48 @@ function ContactForm() {
 
 
     const [checked, setChecked] = useState(false);
+    const [attachedFile, setAttachedFile] = useState<File | null>(null);
+    const fileInputRef = useRef<HTMLInputElement | null>(null);
 
     const toggle = () => {
         const newValue = !checked;
         setChecked(newValue);
     };
 
+    const handleFileSelect = () => {
+        fileInputRef.current?.click();
+    };
+
+    const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        const files = event.target.files;
+        if (!files || files.length === 0) return;
+
+        const file = files[0];
+        const maxSize = 5 * 1024 * 1024; // 5MB
+        const allowedTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'image/jpeg', 'image/jpg', 'image/png'];
+
+        if (file.size > maxSize) {
+            alert(`Файл "${file.name}" слишком большой. Максимальный размер: 5MB`);
+            return;
+        }
+
+        if (!allowedTypes.includes(file.type)) {
+            alert(`Файл "${file.name}" имеет неподдерживаемый формат. Разрешены: pdf, doc, docx, jpg, png`);
+            return;
+        }
+
+        setAttachedFile(file);
+    };
+
+    const removeFile = () => {
+        setAttachedFile(null);
+        if (fileInputRef.current) {
+            fileInputRef.current.value = '';
+        }
+    };
+
     return (
-        <div className="container flex flex-col gap-[2rem]">
+        <div id="contact-form" className="container flex flex-col gap-[2rem]">
             <h2 className="text-[3.125rem] text-[#13151d] font-semibold max-md:text-[1.625rem] leading-[2rem]">
                 Обсудим ваш проект
             </h2>
@@ -208,14 +242,63 @@ function ContactForm() {
                             </Form>
                         )}
                     </Formik>
-                    <div className="flex items-center gap-[.5rem] mt-[1.5rem] ">
-                        <svg className="w-[2rem] h-[2rem]" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fillRule="evenodd" clipRule="evenodd" d="M23.3334 11.6665H2.66669V9.6665H23.3334C27.1993 9.6665 30.3334 12.8005 30.3334 16.6665C30.3334 20.5325 27.1993 23.6665 23.3334 23.6665H10.6667C7.90526 23.6665 5.66669 21.4279 5.66669 18.6665C5.66669 15.9051 7.90526 13.6665 10.6667 13.6665H23.3334C24.9902 13.6665 26.3334 15.0096 26.3334 16.6665C26.3334 18.3234 24.9902 19.6665 23.3334 19.6665H12V17.6665H23.3334C23.8856 17.6665 24.3334 17.2188 24.3334 16.6665C24.3334 16.1142 23.8856 15.6665 23.3334 15.6665H10.6667C9.00983 15.6665 7.66669 17.0096 7.66669 18.6665C7.66669 20.3234 9.00983 21.6665 10.6667 21.6665H23.3334C26.0948 21.6665 28.3334 19.4279 28.3334 16.6665C28.3334 13.9051 26.0948 11.6665 23.3334 11.6665Z" fill="#13151D" fillOpacity="0.7"></path>
-                        </svg>
-                        <div className="flex flex-col">
-                            <span className="text-[1.125rem] text-[#13151db3] font-semibold max-md:text-[0.875rem] max-md:leading-[1.125rem]">Прикрепить файл</span>
-                            <span className="text-[1.125rem] text-[#13151db3] max-md:text-[0.875rem] max-md:leading-[1.125rem]">pdf, doc, jpg, png (макс. 5 шт. до 5 Mb)</span>
+                    
+                    {/* Скрытый input для выбора файла */}
+                    <input
+                        ref={fileInputRef}
+                        type="file"
+                        accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
+                        onChange={handleFileChange}
+                        className="hidden"
+                    />
+                    
+                    {/* Секция прикрепления файлов */}
+                    <div className="mt-[1.5rem]">
+                        <div 
+                            className="flex items-center gap-[.5rem] cursor-pointer hover:opacity-80 transition-opacity"
+                            onClick={handleFileSelect}
+                        >
+                            <svg className="w-[2rem] h-[2rem]" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fillRule="evenodd" clipRule="evenodd" d="M23.3334 11.6665H2.66669V9.6665H23.3334C27.1993 9.6665 30.3334 12.8005 30.3334 16.6665C30.3334 20.5325 27.1993 23.6665 23.3334 23.6665H10.6667C7.90526 23.6665 5.66669 21.4279 5.66669 18.6665C5.66669 15.9051 7.90526 13.6665 10.6667 13.6665H23.3334C24.9902 13.6665 26.3334 15.0096 26.3334 16.6665C26.3334 18.3234 24.9902 19.6665 23.3334 19.6665H12V17.6665H23.3334C23.8856 17.6665 24.3334 17.2188 24.3334 16.6665C24.3334 16.1142 23.8856 15.6665 23.3334 15.6665H10.6667C9.00983 15.6665 7.66669 17.0096 7.66669 18.6665C7.66669 20.3234 9.00983 21.6665 10.6667 21.6665H23.3334C26.0948 21.6665 28.3334 19.4279 28.3334 16.6665C28.3334 13.9051 26.0948 11.6665 23.3334 11.6665Z" fill="#13151D" fillOpacity="0.7"></path>
+                            </svg>
+                            <div className="flex flex-col">
+                                <span className="text-[1.125rem] text-[#13151db3] font-semibold max-md:text-[0.875rem] max-md:leading-[1.125rem]">
+                                    {attachedFile ? 'Файл прикреплен' : 'Прикрепить файл'}
+                                </span>
+                                <span className="text-[1.125rem] text-[#13151db3] max-md:text-[0.875rem] max-md:leading-[1.125rem]">
+                                    {attachedFile ? 'Нажмите для замены файла' : 'pdf, doc, jpg, png (до 5 Mb)'}
+                                </span>
+                            </div>
                         </div>
+                        
+                        {/* Отображение прикрепленного файла */}
+                        {attachedFile && (
+                            <div className="mt-[1rem]">
+                                <div className="flex items-center justify-between bg-gray-50 rounded-[0.5rem] p-[0.75rem]">
+                                    <div className="flex items-center gap-[0.5rem]">
+                                        <svg className="w-[1.25rem] h-[1.25rem]" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3 4C3 3.44772 3.44772 3 4 3H9.58579C9.851 3 10.1054 3.10536 10.2929 3.29289L13.7071 6.70711C13.8946 6.89464 14 7.149 14 7.41421V16C14 16.5523 13.5523 17 13 17H4C3.44772 17 3 16.5523 3 16V4Z" stroke="#13151D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                            <path d="M9 3V7H13" stroke="#13151D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                        </svg>
+                                        <span className="text-[0.875rem] text-[#13151D] font-medium truncate max-w-[200px]">
+                                            {attachedFile.name}
+                                        </span>
+                                        <span className="text-[0.75rem] text-[#13151db3]">
+                                            ({(attachedFile.size / 1024 / 1024).toFixed(1)} MB)
+                                        </span>
+                                    </div>
+                                    <button
+                                        onClick={removeFile}
+                                        className="text-red-500 hover:text-red-700 transition-colors p-[0.25rem]"
+                                        type="button"
+                                    >
+                                        <svg className="w-[1rem] h-[1rem]" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 4L4 12M4 4L12 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        )}
                     </div>
                     <div className="mt-[3.5rem] flex gap-[2.5rem] max-md:flex-col max-md:mt-[1.5rem]">
                         <button className="bg-[#8b73ff] min-w-fit px-[2rem] rounded-[0.75rem] flex items-center h-[4.25rem] text-white text-[1.125rem] w-fit max-md:w-full max-md:justify-center hover:bg-[#7d63ff] transition-all ease-out duration-300 cursor-pointer">Отправить заявку</button>

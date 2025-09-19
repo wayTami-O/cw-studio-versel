@@ -6,12 +6,12 @@ function Footer() {
         <footer className="bg-[#13151d] mt-[7.5rem] flex flex-col gap-[4.5rem] pt-[4.5rem] pb-[2.125rem] px-[2.5rem] max-md:px-[1rem]">
             <div className="flex gap-[5.125rem] max-md:flex-col max-md:gap-[2rem]">
                 <div className="w-[19.125rem] flex flex-col gap-[1.5rem]">
-                    <p className="text-[1.5rem] text-white leading-[2rem] font-semibold">Кейсы</p>
-                    <p className="text-[1.5rem] text-white leading-[2rem] font-semibold">Услуги</p>
-                    <p className="text-[1.5rem] text-white leading-[2rem] font-semibold">О компании</p>
-                    <p className="text-[1.5rem] text-white leading-[2rem] font-semibold">Блог</p>
+                    <a href="#cases" className="text-[1.5rem] text-white leading-[2rem] font-semibold hover:opacity-70 transition-opacity">Кейсы</a>
+                    <a href="#services" className="text-[1.5rem] text-white leading-[2rem] font-semibold hover:opacity-70 transition-opacity">Услуги</a>
+                    <a href="#company" className="text-[1.5rem] text-white leading-[2rem] font-semibold hover:opacity-70 transition-opacity">О компании</a>
+                    <a href="#contact-form" className="text-[1.5rem] text-white leading-[2rem] font-semibold hover:opacity-70 transition-opacity">Блог</a>
                 </div>
-                <hr className="w-full border-none h-[0.0625rem] bg-[#ffffff66]" />
+                <hr className="w-full border-none h-[0.0625rem] bg-[#ffffff66] mobile" />
                 <div className="w-full flex justify-between  max-md:flex-col max-md:gap-[2rem]">
                     <div className="grid grid-cols-2 gap-y-[20%] max-w-[46.875rem] gap-x-[1.5rem] h-[15rem] max-md:flex max-md:flex-col max-md:h-fit max-md:gap-[1rem]">
                         <div className="flex flex-col gap-[0.5rem]">
@@ -25,7 +25,7 @@ function Footer() {
                             <p className="text-[1.5rem] text-white leading-[2rem] font-semibold">Москва</p>
                             <p className="text-[1.125rem] text-white leading-[2rem] tracking-[-.03em]">Пресненская набережная, 8с1, башня «Москва», 58 этаж, офис 581</p>
                         </div>
-                        <button className="bg-white px-[2rem] rounded-[0.75rem] flex items-center h-[4.25rem] text-[#13151d] text-[1.125rem] w-fit font-semibold max-md:order-4 max-md:w-full max-md:justify-center hover:bg-[#e4e4e4] transition-all ease-out duration-300 cursor-pointer">Связаться с нами</button>
+                        <a href="#contact-form" className="bg-white px-[2rem] rounded-[0.75rem] flex items-center h-[4.25rem] text-[#13151d] text-[1.125rem] w-fit font-semibold max-md:order-4 max-md:w-full max-md:justify-center hover:bg-[#e4e4e4] transition-all ease-out duration-300 cursor-pointer">Связаться с нами</a>
                         <div className="flex flex-col gap-[0.5rem] max-md:order-3">
                             <p className="text-[1.5rem] text-white leading-[2rem] font-semibold">Тамбов</p>
                             <p className="text-[1.125rem] text-white leading-[2rem] tracking-[-.03em]">Максима Горького, 17 БЦ Галерея</p>

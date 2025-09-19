@@ -9,6 +9,9 @@ import {
 import Image from "next/image";
 
 function Burger({ open, onClose } : { open: boolean, onClose: () => void }) {
+    const handleLinkClick = () => {
+        onClose();
+    };
     return (
         <Sheet open={open}>
             <SheetContent className=" !max-w-[100%] w-full h-full center flex-col max-md:justify-start max-md:mt-[4rem]">
@@ -16,7 +19,7 @@ function Burger({ open, onClose } : { open: boolean, onClose: () => void }) {
                 <div className="max-w-[110rem] w-full h-fit flex items-center gap-[8.75rem] max-md:flex-col-reverse max-md:gap-[2rem]">
                     <div className="w-full h-fit flex items-end flex-col gap-[4.5rem] max-md:items-center">
                         <div className="w-full flex items-center gap-[2rem] max-md:flex-col">
-                            <button className="min-w-fit bg-[#13151d] px-[2rem] rounded-[0.75rem] flex items-center h-[4.25rem] text-white text-[1.125rem] w-fit max-md:w-full max-md:justify-center hover:bg-[#313131] transition-all ease-out duration-300 cursor-pointer">Обсудить проект</button>
+                            <a href="#contact-form" onClick={handleLinkClick} className="min-w-fit bg-[#13151d] px-[2rem] rounded-[0.75rem] flex items-center h-[4.25rem] text-white text-[1.125rem] w-fit max-md:w-full max-md:justify-center hover:bg-[#313131] transition-all ease-out duration-300 cursor-pointer">Обсудить проект</a>
                             <div className="flex items-center gap-[1rem]">
                                 <Image 
                                     src={'./svg5.svg'}
@@ -42,7 +45,10 @@ function Burger({ open, onClose } : { open: boolean, onClose: () => void }) {
                     </div>
                     <hr className="border-none h-full bg-[#13151d29] w-[0.063rem]" />
                     <div className="h-full w-full flex flex-col gap-[2.5rem]">
-                        <a href="#" className="text-[3.125rem] text-[#13151d] font-semibold max-md:text-[1.625rem] leading-[2rem]">Кейсы</a>
+                        <a href="#cases" onClick={handleLinkClick} className="text-[3.125rem] text-[#13151d] font-semibold max-md:text-[1.625rem] leading-[2rem] hover:opacity-70 transition-opacity">Кейсы</a>
+                        <a href="#services" onClick={handleLinkClick} className="text-[3.125rem] text-[#13151d] font-semibold max-md:text-[1.625rem] leading-[2rem] hover:opacity-70 transition-opacity">Услуги</a>
+                        <a href="#company" onClick={handleLinkClick} className="text-[3.125rem] text-[#13151d] font-semibold max-md:text-[1.625rem] leading-[2rem] hover:opacity-70 transition-opacity">Компания</a>
+                        <a href="#contacts" onClick={handleLinkClick} className="text-[3.125rem] text-[#13151d] font-semibold max-md:text-[1.625rem] leading-[2rem] hover:opacity-70 transition-opacity">Контакты</a>
                     </div>
                 </div>
             </SheetContent>

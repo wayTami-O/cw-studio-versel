@@ -32,7 +32,7 @@ function Review() {
 
     return (
 
-        <div className="container flex flex-col gap-[2rem]">
+        <div className="flex flex-col gap-[2rem]">
       <Swiper
         modules={[Pagination]}
         slidesPerView={2.1}
@@ -44,7 +44,7 @@ function Review() {
             return `<span class="${className} block !w-[3.75rem] !h-[0.375rem] !rounded-[0.25rem] !bg-[#13151d] opacity-10"></span>`;
           },
         }}
-        className="w-full"
+        className="w-full !px-[5rem] max-md:!px-[1rem]"
       >
         {reviews.map((review, idx) => (
           <SwiperSlide key={idx}>
