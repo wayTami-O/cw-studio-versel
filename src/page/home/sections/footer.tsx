@@ -12,7 +12,7 @@ function Footer() {
                     <a href="#contact-form" className="text-[1.5rem] text-white leading-[2rem] font-semibold hover:opacity-70 transition-opacity">Блог</a>
                 </div>
                 <hr className="w-full border-none h-[0.0625rem] bg-[#ffffff66] mobile" />
-                <div className="w-full flex justify-between  max-md:flex-col max-md:gap-[2rem]">
+                {/* <div className="w-full flex justify-between  max-md:flex-col max-md:gap-[2rem]">
                     <div className="grid grid-cols-2 gap-y-[20%] max-w-[46.875rem] gap-x-[1.5rem] h-[15rem] max-md:flex max-md:flex-col max-md:h-fit max-md:gap-[1rem]">
                         <div className="flex flex-col gap-[0.5rem]">
                             <p className="text-[1.5rem] text-white leading-[2rem] font-semibold">Контакты</p>
@@ -47,15 +47,15 @@ function Footer() {
                             className="w-[10.875rem] h-[3.375rem]"
                         />
                     </div>
-                </div>
+                </div> */}
             </div>
-            <div className="flex flex-col gap-[1rem]">
+            {/* <div className="flex flex-col gap-[1rem]">
                 <hr className="w-full h-[0.0625rem] border-none bg-[#fff6]" />
                 <div className="flex items-center gap-[1.25rem] max-md:flex-col max-md:gap-[.25rem] max-md:justify-center">
                     <p className=" text-[#fff6] text-[1rem] max-md:text-center">© ООО «Эверест»  2025. Все права защищены.</p>
                     <p className=" text-[#fff6] text-[1rem] max-md:text-center">Политика обработки персональных данных</p>
                 </div>
-            </div>
+            </div> */}
         </footer>
     );
 }

@@ -35,8 +35,8 @@ function Review() {
         <div className="flex flex-col gap-[2rem]">
       <Swiper
         modules={[Pagination]}
-        slidesPerView={2.1}
-        spaceBetween={30}
+        slidesPerView={1}
+        spaceBetween={8}
         pagination={{
           el: ".custom-pagination",
           clickable: true,
@@ -45,6 +45,12 @@ function Review() {
           },
         }}
         className="w-full !px-[5rem] max-md:!px-[1rem]"
+        breakpoints={{
+          768: {
+            slidesPerView: 2.1,
+            spaceBetween: 30
+          }
+        }}
       >
         {reviews.map((review, idx) => (
           <SwiperSlide key={idx}>
