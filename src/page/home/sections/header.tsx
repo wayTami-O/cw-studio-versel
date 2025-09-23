@@ -12,7 +12,7 @@ function Header() {
         
             <header className="fixed top-0 left-1/2 -translate-x-1/2 max-w-[110rem] h-[6.25rem] flex justify-between items-center bg-white z-[100] !w-full
                 max-md:w-[21.4375rem] max-md:h-[4rem] max-md:px-[1rem]"> 
-                <svg className="h-[5rem] max-md:h-[3.5rem] w-fit cursor-pointer" width="60" height="56" viewBox="0 0 60 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className="h-[3.75rem] max-md:h-[3.5rem] w-fit cursor-pointer" width="60" height="56" viewBox="0 0 60 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clipPath="url(#clip0_369_4209)">
                     <path d="M30.0063 0C35.2641 0 40.0328 2.13557 43.5293 5.60241L40.1262 9.3385C37.5224 6.7184 33.9503 5.09942 30.0063 5.09941C22.0395 5.09941 15.5807 11.6963 15.5807 19.8333C15.5808 27.9704 22.0397 34.5661 30.0063 34.5661C33.8084 34.5661 37.2641 33.0609 39.841 30.6057L43.244 34.3407C39.7755 37.6439 35.1227 39.6667 30.0063 39.6667C19.2819 39.6667 10.5881 30.787 10.5881 19.8333C10.5881 8.87969 19.2819 0 30.0063 0Z" fill="#090707"/>
                     <mask id="mask0_369_4209" style={{ maskType: "luminance" }} maskUnits="userSpaceOnUse" x="0" y="16" width="60" height="40">
