@@ -8,19 +8,19 @@ function Contacts() {
                     <a href="#" className="text-[1.5rem] text-[#13151d] tracking-[-.03em] leading-[2rem] font-semibold">sales@everest.cx</a>
                 </div>
                 <div className="w-full flex flex-col gap-[0.5rem]">
-                    <p className="text-[#13151db3] text-[1.125rem]">Звоните</p>
-                    <a href="#" className="text-[1.5rem] text-[#13151d] tracking-[-.03em] leading-[2rem] font-semibold">+7 495 414 14 44</a>
+                    <p className="text-[#13151db3] text-[1.125rem]">Telegram</p>
+                    <a href="https://t.me/lev_budko" className="text-[1.5rem] text-[#13151d] tracking-[-.03em] leading-[2rem] font-semibold">@lev_budko</a>
                 </div>
                 <div className="w-full flex flex-col gap-[0.5rem] col-span-2 max-md:col-span-1">
-                    <p className="text-[#13151db3] text-[1.125rem]">Москва</p>
-                    <a href="#" className="text-[1.5rem] text-[#13151d] tracking-[-.03em] leading-[2rem] font-semibold">Пресненская набережная, 8с1, башня «Москва», 58 этаж, офис 581</a>
+                    {/* <p className="text-[#13151db3] text-[1.125rem]">Москва</p>
+                    <a href="#" className="text-[1.5rem] text-[#13151d] tracking-[-.03em] leading-[2rem] font-semibold">Пресненская набережная, 8с1, башня «Москва», 58 этаж, офис 581</a> */}
                 </div>
                 <div className="w-full flex flex-col gap-[0.5rem] col-span-2 max-md:col-span-1 max-md:order-5">
                     <a href="#contact-form" className="bg-[#8b73ff] px-[2rem] rounded-[0.75rem] flex items-center h-[4.25rem] text-white text-[1.125rem] w-fit font-semibold max-md:w-full max-md:justify-center hover:bg-[#7d63ff] transition-all ease-out duration-300 cursor-pointer">Обсудить проект</a>
                 </div>
                 <div className="w-full flex flex-col gap-[0.5rem] col-span-2 max-md:col-span-1 max-md:order-4">
-                    <p className="text-[#13151db3] text-[1.125rem]">Тамбов</p>
-                    <a href="#" className="text-[1.5rem] text-[#13151d] tracking-[-.03em] leading-[2rem] font-semibold">Максима Горького, 17 БЦ Галерея</a>
+                    {/* <p className="text-[#13151db3] text-[1.125rem]">Тамбов</p>
+                    <a href="#" className="text-[1.5rem] text-[#13151d] tracking-[-.03em] leading-[2rem] font-semibold">Максима Горького, 17 БЦ Галерея</a> */}
                 </div>
             </div>
         </div>
