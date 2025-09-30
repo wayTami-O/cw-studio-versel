@@ -28,7 +28,7 @@ function Burger({ open, onClose } : { open: boolean, onClose: () => void }) {
                                     height={60}
                                     className="w-[3.5rem] h-[3.5rem]"
                                 />
-                                <p className="text-[1.25rem] leading-[1.625rem] tracking-[-.03em] max-md:text-[1.125rem] max-md:leading-[1.375rem]">или напишите нашему аккаунт директору в <span className="text-[#8b73ff]">телеграмм</span></p>
+                                <p className="text-[1.25rem] leading-[1.625rem] tracking-[-.03em] max-md:text-[1.125rem] max-md:leading-[1.375rem]">или напишите нашему аккаунт директору в <span className="text-[#8b73ff]"><a href="https://t.me/lev_budko" target="_blank">телеграмм</a></span></p>
                             </div>
                         </div>
                         <div className="flex items-center gap-[2rem] max-md:flex-col">

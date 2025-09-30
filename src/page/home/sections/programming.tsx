@@ -2,8 +2,8 @@ import Image from "next/image";
 
 function Programming() {
     return (
-        <div id="services" className="container flex flex-col gap-[7.5rem]">
-            <div className="flex justify-between items-center max-md:flex-col max-md:gap-[1rem]">
+        <div id="services" className="container flex flex-col gap-[7.5rem] scroll-mt-[6.25rem] max-md:scroll-mt-[4rem]">
+            <div className="flex justify-between gap-[2rem] items-center max-md:flex-col max-md:gap-[1rem]">
                 <div className="max-w-[50.5rem] w-full flex flex-col">
                     <h2 className="text-[3.125rem] leading-[3.625rem] text-[#13151d] tracking-[-.03em] font-semibold max-md:text-[1.625rem] max-md:leading-[2rem]">Дизайн, ориентированный на пользователей</h2>
                     <p className="mt-[2rem] text-[#13151d] text-[1.125rem] max-md:text-[1rem] max-md:leading-[1.6875rem]">Мы предлагаем полный цикл UX/UI-дизайна, начиная от анализа потребностей пользователей до создания готовых интерфейсов, готовых к разработке.</p>
@@ -28,7 +28,7 @@ function Programming() {
                     />
                 </div>
             </div>
-            <div className="flex justify-between items-center max-md:flex-col max-md:gap-[1rem]">
+            <div className="flex justify-between gap-[2rem] items-center max-md:flex-col max-md:gap-[1rem]">
                 <div className="w-[55rem] h-[30rem] rounded-[2rem] overflow-hidden max-md:!w-[21.4375rem] max-md:h-[25rem] order-1 max-md:order-2">
                     <Image 
                         src={'/img3.png'}

@@ -12,7 +12,7 @@ import {
 function BestStudio() {
     const [isVideoOpen, setIsVideoOpen] = useState(false);
     return (
-        <div id="company" className="container flex gap-[4.5rem] items-center max-md:flex-col">
+        <div id="company" className="container flex gap-[4.5rem] items-center max-md:flex-col scroll-mt-[6.25rem] max-md:scroll-mt-[4rem]">
             <div className="flex flex-col">
                 <h2 className="mb-[3.5rem] text-[3.125rem] leading-[3.625rem] font-semibold tracking-[-.03em] max-md:text-[1.625rem] max-md:leading-[2rem]">Входим в десятку лучших дизайн-студий России</h2>
                 <div className="mb-[1.5rem] flex items-center gap-[3.5rem] max-md:justify-between max-md:gap-0">

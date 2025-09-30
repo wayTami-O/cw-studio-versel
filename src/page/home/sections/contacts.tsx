@@ -1,12 +1,12 @@
 function Contacts() {
     return (
-        <div id="contacts" className="container flex flex-col gap-[2rem]">
+        <div id="contacts" className="container flex flex-col gap-[2rem] scroll-mt-[6.25rem] max-md:scroll-mt-[4rem]">
             <h2 className="text-[3.125rem] text-[#13151d] font-semibold">Контакты</h2>
             <div className="grid grid-cols-4 gap-[2.5rem] max-md:grid-cols-1">
-                <div className="w-full flex flex-col gap-[0.5rem]">
+                {/* <div className="w-full flex flex-col gap-[0.5rem]">
                     <p className="text-[#13151db3] text-[1.125rem]">Пишите</p>
                     <a href="#" className="text-[1.5rem] text-[#13151d] tracking-[-.03em] leading-[2rem] font-semibold">sales@everest.cx</a>
-                </div>
+                </div> */}
                 <div className="w-full flex flex-col gap-[0.5rem]">
                     <p className="text-[#13151db3] text-[1.125rem]">Telegram</p>
                     <a href="https://t.me/lev_budko" className="text-[1.5rem] text-[#13151d] tracking-[-.03em] leading-[2rem] font-semibold">@lev_budko</a>

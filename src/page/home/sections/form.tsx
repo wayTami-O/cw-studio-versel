@@ -60,7 +60,7 @@ function ContactForm() {
     };
 
     return (
-        <div id="contact-form" className="container flex flex-col gap-[2rem]">
+        <div id="contact-form" className="container flex flex-col gap-[2rem] scroll-mt-[6.25rem] max-md:scroll-mt-[4rem]">
             <h2 className="text-[3.125rem] text-[#13151d] font-semibold max-md:text-[1.625rem] leading-[2rem]">
                 Обсудим ваш проект
             </h2>
@@ -70,13 +70,13 @@ function ContactForm() {
                         Расскажите подробнее о проекте, и мы свяжемся с вами в ближайшее время.
                     </p>
                     <p className="text-[1.125rem] text-[#13151db3] mt-[3.5rem] mb-[1.5rem] max-md:text-[1rem]">
-                        Не знаете с чего начать — позвоните нам, <br /> мы поможем разобраться.
+                        Не знаете с чего начать — напишите нам, <br /> мы поможем разобраться.
                     </p>
                     <a
-                        href="#"
+                        href="https://t.me/lev_budko"
                         className="text-[1.5rem] text-[#13151d] tracking-[-.03em] leading-[2rem] font-semibold"
                     >
-                        +7 495 414 14 44
+                        @lev_budko
                     </a>
                 </div>
 
@@ -200,16 +200,16 @@ function ContactForm() {
                     </Formik>
                     
                     {/* Скрытый input для выбора файла */}
-                    <input
+                    {/* <input
                         ref={fileInputRef}
                         type="file"
                         accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
                         onChange={handleFileChange}
                         className="hidden"
-                    />
+                    /> */}
                     
                     {/* Секция прикрепления файлов */}
-                    <div className="mt-[1.5rem]">
+                    {/* <div className="mt-[1.5rem]">
                         <div 
                             className="flex items-center gap-[.5rem] cursor-pointer hover:opacity-80 transition-opacity"
                             onClick={handleFileSelect}
@@ -227,7 +227,6 @@ function ContactForm() {
                             </div>
                         </div>
                         
-                        {/* Отображение прикрепленного файла */}
                         {attachedFile && (
                             <div className="mt-[1rem]">
                                 <div className="flex items-center justify-between bg-gray-50 rounded-[0.5rem] p-[0.75rem]">
@@ -255,7 +254,7 @@ function ContactForm() {
                                 </div>
                             </div>
                         )}
-                    </div>
+                    </div> */}
                     <div className="mt-[3.5rem] flex gap-[2.5rem] max-md:flex-col max-md:mt-[1.5rem]">
                         <button className="bg-[#8b73ff] min-w-fit px-[2rem] rounded-[0.75rem] flex items-center h-[4.25rem] text-white text-[1.125rem] w-fit max-md:w-full max-md:justify-center hover:bg-[#7d63ff] transition-all ease-out duration-300 cursor-pointer">Отправить заявку</button>
                         <div className="flex gap-[1.5rem]">
