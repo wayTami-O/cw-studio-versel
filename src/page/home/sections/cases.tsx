@@ -42,7 +42,7 @@ function Cases() {
 
     return (
         <div id="cases" className="container flex flex-col gap-[4.5rem]">
-            <div className="flex items-center gap-[0.75rem] overflow-x-scroll overflow-y-hidden scrollbar-hide">
+            {/* <div className="flex items-center gap-[0.75rem] overflow-x-scroll overflow-y-hidden scrollbar-hide">
                 <div className="px-[1.1875rem] max-md:px-[1.1875rem] max-md:text-[1.125rem] max-md:h-[2.5rem] flex items-center text-white bg-black rounded-[6.25rem] text-[1.375rem] font-500 h-[3.375rem]">Все</div>
                 <div className="px-[1.1875rem] max-md:px-[1.1875rem] max-md:text-[1.125rem] max-md:h-[2.5rem] flex items-center bg-white text-black rounded-[6.25rem] text-[1.375rem] font-500 h-[3.375rem] border-[0.0625rem] border-[#13151d29]">Веб</div>
                 <div className="px-[1.1875rem] max-md:px-[1.1875rem] max-md:text-[1.125rem] max-md:h-[2.5rem] flex items-center bg-white text-black rounded-[6.25rem] text-[1.375rem] font-500 h-[3.375rem] border-[0.0625rem] border-[#13151d29]">Сервисы</div>
@@ -50,7 +50,7 @@ function Cases() {
                 <div className="px-[1.1875rem] max-md:px-[1.1875rem] max-md:text-[1.125rem] max-md:h-[2.5rem] flex items-center bg-white text-black rounded-[6.25rem] text-[1.375rem] font-500 h-[3.375rem] border-[0.0625rem] border-[#13151d29]">ПО</div>
                 <div className="px-[1.1875rem] max-md:px-[1.1875rem] max-md:text-[1.125rem] max-md:h-[2.5rem] flex items-center bg-white text-black rounded-[6.25rem] text-[1.375rem] font-500 h-[3.375rem] border-[0.0625rem] border-[#13151d29]">Мобайл</div>
                 <div className="px-[1.1875rem] max-md:px-[1.1875rem] max-md:text-[1.125rem] max-md:h-[2.5rem] flex items-center bg-white text-black rounded-[6.25rem] text-[1.375rem] font-500 h-[3.375rem] border-[0.0625rem] border-[#13151d29]">Брендинг</div>
-            </div>
+            </div> */}
                 <div className="flex gap-[2.5rem] flex-col">
                     {
                         items.map((el, index) => {

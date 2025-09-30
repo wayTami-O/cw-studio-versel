@@ -10,7 +10,7 @@ function Header() {
     return (
         <>
         
-            <header className="fixed top-0 left-1/2 -translate-x-1/2 max-w-[110rem] h-[6.25rem] flex justify-between items-center bg-white z-[100] !w-full
+            <header className="fixed top-0 left-1/2 -translate-x-1/2 max-w-[95rem] h-[6.25rem] flex justify-between items-center bg-white z-[100] !w-full
                 max-md:w-[21.4375rem] max-md:h-[4rem] max-md:px-[1rem]"> 
                 <svg className="h-[3.75rem] max-md:h-[3.5rem] w-fit cursor-pointer" width="60" height="56" viewBox="0 0 60 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clipPath="url(#clip0_369_4209)">

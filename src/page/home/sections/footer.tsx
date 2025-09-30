@@ -3,7 +3,7 @@ import Image from "next/image";
 function Footer() {
     // footer
     return (
-        <footer className="bg-[#13151d] mt-[7.5rem] flex flex-col gap-[4.5rem] pt-[4.5rem] pb-[2.125rem] px-[2.5rem] max-md:px-[1rem]">
+        <footer className="bg-[#13151d] mt-[7.5rem] flex flex-col gap-[4.5rem] pt-[4.5rem] pb-[2.125rem] px-[12.5rem] max-md:px-[1rem]">
             <div className="flex gap-[5.125rem] max-md:flex-col max-md:gap-[2rem]">
                 <div className="w-[19.125rem] flex flex-col gap-[1.5rem]">
                     <a href="#cases" className="text-[1.5rem] text-white leading-[2rem] font-semibold hover:opacity-70 transition-opacity">Кейсы</a>

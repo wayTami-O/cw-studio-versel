@@ -64,11 +64,11 @@ function CaseItem({ img, title, desc }: IPropsCaseItem) {
             <div className="flex flex-col gap-[1.5rem]">
                 <h2 className="text-black text-[2.5rem] font-semibold tracking-[-.03em] leading-[3rem] max-md:text-[1.375rem] max-md:leading-[1.75rem]">{title}</h2>
                 <p className="text-[#13151db3] text-[1.125rem] max-md:text-[1rem] max-md:leading-[1.6875rem]">{desc}</p>
-                <div className="cursor-pointer w-[4.25rem] h-[4.25rem] border-[0.0625rem] border-[#13151d29] rounded-full flex items-center justify-center max-md:w-[3.25rem] max-md:h-[3.25rem]">
+                {/* <div className="cursor-pointer w-[4.25rem] h-[4.25rem] border-[0.0625rem] border-[#13151d29] rounded-full flex items-center justify-center max-md:w-[3.25rem] max-md:h-[3.25rem]">
                     <svg className="w-[2rem] h-[2rem] rotate-180 max-md:w-[1.125rem] max-md:h-[1.125rem]" viewBox="0 0 15.699 8.707" fill="currentColor">
                         <polygon points="15.699,3.854 1.914,3.854 5.061,0.707 4.354,0 0,4.354 4.354,8.707 5.061,8 1.914,4.854 15.699,4.854"/>
                     </svg>
-                </div>
+                </div> */}
             </div>
         </div>
     );

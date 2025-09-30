@@ -105,11 +105,11 @@ body::-webkit-scrollbar {
 }
 
 .container {
-  @apply mt-[7.5rem] mx-auto max-w-[110rem] max-md:px-[1rem] px-0;
+  @apply mt-[7.5rem] mx-auto max-w-[95rem] max-md:px-[1rem] px-0;
 }
 
 .container-no-margin {
-  @apply mx-auto max-w-[110rem] max-md:px-[1rem];
+  @apply mx-auto max-w-[95rem] max-md:px-[1rem];
 }
 
 .desktop {

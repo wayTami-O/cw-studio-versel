@@ -16,11 +16,11 @@ export function HomePage() {
       <Header />
       <Hero />
       <Cases />
-      <BestStudio />
-      <Trust />
+      {/* <BestStudio /> */}
+      {/* <Trust /> */}
       <Review />
       <Programming />
-      <Waiting />
+      {/* <Waiting /> */}
       <Contacts />
       <Form />
       <Footer />

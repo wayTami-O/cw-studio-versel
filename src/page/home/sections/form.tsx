@@ -1,37 +1,20 @@
 'use client'
 
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { Formik, Form, Field } from "formik";
 import { motion } from "framer-motion";
 import { z } from "zod";
 import { toFormikValidationSchema } from "zod-formik-adapter";
-import IMask from "imask";
 
 // Zod схема валидации
 const FormSchema = z.object({
     name: z.string().min(1, "Введите имя"),
     email: z.string().email("Некорректный email"),
-    phone: z
-        .string()
-        .min(10, "Введите телефон")
-        .regex(/^[+0-9 ()-]+$/, "Неверный формат"),
-    from: z.string().optional(),
-    message: z.string().min(1, "Введите сообщение"),
+    telegram: z.string().min(1, "Введите Telegram ID"),
+    message: z.string().optional(),
 });
 
 function ContactForm() {
-    const phoneRef = useRef<HTMLInputElement | null>(null);
-
-    useEffect(() => {
-        if (phoneRef.current) {
-            const maskOptions = {
-                mask: "+{7} (000) 000-00-00",
-            };
-            const mask = IMask(phoneRef.current, maskOptions);
-            return () => mask.destroy();
-        }
-    }, []);
-
     const isActive = (val: string) => val.length > 0;
 
 
@@ -101,7 +84,7 @@ function ContactForm() {
 
                     
                     <Formik
-                        initialValues={{ name: "", email: "", phone: "", from: "", message: "" }}
+                        initialValues={{ name: "", email: "", telegram: "", message: "" }}
                         validationSchema={toFormikValidationSchema(FormSchema)}
                         onSubmit={(values) => {
                             console.log("Submitted:", values);
@@ -161,56 +144,29 @@ function ContactForm() {
                                     </motion.span>
                                 </label>
 
-                                {/* Phone */}
-                                <label className="h-[4.25rem] relative flex items-center w-full">
+                                {/* Telegram */}
+                                <label className="h-[4.25rem] relative flex items-center w-full col-span-2">
                                     <Field
-                                        innerRef={phoneRef}
                                         type="text"
-                                        name="phone"
-                                        value={values.phone}
+                                        name="telegram"
+                                        value={values.telegram}
                                         onChange={handleChange}
                                         className={`w-full border-[0.063rem] rounded-[0.75rem]
                                             bg-white flex text-[1.25rem] leading-[2rem] pt-[1.5rem]
                                             px-[1.5rem] pb-[0.625rem] outline-none
-                                            ${errors.phone && touched.phone ? 'border-red-500' : 'border-[#13151d29]'}`}
+                                            ${errors.telegram && touched.telegram ? 'border-red-500' : 'border-[#13151d29]'}`}
                                     />
                                     <motion.span
                                         initial={false}
                                         animate={
-                                            isActive(values.phone)
+                                            isActive(values.telegram)
                                                 ? { top: "0.4rem", fontSize: "0.875rem", opacity: 0.8 }
                                                 : { top: "1.55rem", fontSize: "1.25rem", opacity: 0.3 }
                                         }
                                         transition={{ type: "tween", duration: 0.25 }}
                                         className="absolute left-[1.5rem] pointer-events-none"
                                     >
-                                        Телефон
-                                    </motion.span>
-                                </label>
-
-                                {/* From */}
-                                <label className="h-[4.25rem] relative flex items-center w-full">
-                                    <Field
-                                        type="text"
-                                        name="from"
-                                        value={values.from}
-                                        onChange={handleChange}
-                                        className={`w-full border-[0.063rem] rounded-[0.75rem]
-                                            bg-white flex text-[1.25rem] leading-[2rem] pt-[1.5rem]
-                                            px-[1.5rem] pb-[0.625rem] outline-none
-                                            ${errors.from && touched.from ? 'border-red-500' : 'border-[#13151d29]'}`}
-                                    />
-                                    <motion.span
-                                        initial={false}
-                                        animate={
-                                            isActive(values.from)
-                                                ? { top: "0.4rem", fontSize: "0.875rem", opacity: 0.8 }
-                                                : { top: "1.55rem", fontSize: "1.25rem", opacity: 0.3 }
-                                        }
-                                        transition={{ type: "tween", duration: 0.25 }}
-                                        className="absolute left-[1.5rem] pointer-events-none"
-                                    >
-                                        Откуда о нас узнали
+                                        Telegram ID
                                     </motion.span>
                                 </label>
 

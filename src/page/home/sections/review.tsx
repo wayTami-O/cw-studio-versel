@@ -44,7 +44,7 @@ function Review() {
             return `<span class="${className} block !w-[3.75rem] !h-[0.375rem] !rounded-[0.25rem] !bg-[#13151d] opacity-10"></span>`;
           },
         }}
-        className="w-full !px-[5rem] max-md:!px-[1rem]"
+        className="w-full mt-[7.5rem] !px-[12.5rem] max-md:!px-[1rem]"
         breakpoints={{
           768: {
             slidesPerView: 2.1,

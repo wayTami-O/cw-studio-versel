@@ -156,7 +156,7 @@ function Hero() {
                             <span className="text-[1.875rem] text-white">WEB</span>
                         </div>
                     ) : (
-                        <div className="px-[3rem] max-md:px-[1rem] h-[4.75rem] max-md:h-[2.5rem] font-[600] text-[1.875rem] text-[#13151d] flex justify-center items-center rounded-[6.25rem] bg-[#f5f5f5]">банков</div>
+                        <div className="px-[3rem] max-md:px-[1rem] h-[4.75rem] max-md:h-[2.5rem] font-[600] text-[1.875rem] text-[#13151d] flex justify-center items-center rounded-[6.25rem] bg-[#f5f5f5]">WEB</div>
                     )
                 }
                 
