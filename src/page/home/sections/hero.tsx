@@ -175,7 +175,7 @@ function Hero() {
                 
                 {
                     activeItem.category === 3 ? (
-                        <div className="pr-[3rem] pl-[5rem] max-md:px-[1rem] h-[4.75rem] max-md:h-[2.5rem] font-[600] text-[1.875rem] text-[#13151d] flex justify-center items-center rounded-[6.25rem] relative" style={{ backgroundColor: activeItem.color }}>
+                        <div className="pr-[3rem] pl-[5rem] max-md:pr-[1rem] max-md:pl-[2.75rem]  h-[4.75rem] max-md:h-[2.5rem] font-[600] text-[1.875rem] text-[#13151d] flex justify-center items-center rounded-[6.25rem] relative" style={{ backgroundColor: activeItem.color }}>
                             
                             {activeItem.svg}
 
@@ -186,9 +186,22 @@ function Hero() {
                     )
                 }
 
+                {/* {
+                    activeItem.category === 3 ? (
+                        <div className="pr-[3rem] pl-[5rem] max-md:px-[1rem] h-[4.75rem] max-md:h-[2.5rem] font-[600] text-[1.875rem] text-[#13151d] flex justify-center items-center rounded-[6.25rem] relative" style={{ backgroundColor: activeItem.color }}>
+                            
+                            {activeItem.svg}
+
+                            <span className="text-[1.875rem] text-white">Mobile</span>
+                        </div>
+                    ) : (
+                        <div className="px-[3rem] max-md:px-[1rem] h-[4.75rem] max-md:h-[2.5rem] font-[600] text-[1.875rem] text-[#13151d] flex justify-center items-center rounded-[6.25rem] bg-[#f5f5f5]">Mobile</div>
+                    )
+                } */}
+
                 {
                     activeItem.category === 4 ? (
-                        <div className="pr-[3rem] pl-[5rem] max-md:px-[1rem] h-[4.75rem] max-md:h-[2.5rem] font-[600] text-[1.875rem] text-[#13151d] flex justify-center items-center rounded-[6.25rem] relative" style={{ backgroundColor: activeItem.color }}>
+                        <div className="pr-[3rem] pl-[5rem] max-md:pr-[1rem] max-md:pl-[2.75rem]  h-[4.75rem] max-md:h-[2.5rem] font-[600] text-[1.875rem] text-[#13151d] flex justify-center items-center rounded-[6.25rem] relative" style={{ backgroundColor: activeItem.color }}>
                             
                             {activeItem.svg}
 
@@ -199,7 +212,33 @@ function Hero() {
                     )
                 }
 
+                {/* {
+                    activeItem.category === 4 ? (
+                        <div className="pr-[3rem] pl-[5rem] max-md:px-[1rem] h-[4.75rem] max-md:h-[2.5rem] font-[600] text-[1.875rem] text-[#13151d] flex justify-center items-center rounded-[6.25rem] relative" style={{ backgroundColor: activeItem.color }}>
+                            
+                            {activeItem.svg}
+
+                            <span className="text-[1.875rem] text-white">UI/UX</span>
+                        </div>
+                    ) : (
+                        <div className="px-[3rem] max-md:px-[1rem] h-[4.75rem] max-md:h-[2.5rem] font-[600] text-[1.875rem] text-[#13151d] flex justify-center items-center rounded-[6.25rem] bg-[#f5f5f5]">UI/UX</div>
+                    )
+                } */}
+
                 {
+                    activeItem.category === 5 ? (
+                        <div className="pr-[3rem] pl-[5rem] max-md:pr-[1rem] max-md:pl-[2.75rem]  h-[4.75rem] max-md:h-[2.5rem] font-[600] text-[1.875rem] text-[#13151d] flex justify-center items-center rounded-[6.25rem] relative" style={{ backgroundColor: activeItem.color }}>
+                            
+                            {activeItem.svg}
+
+                            <span className="text-[1.875rem] text-white">Blockchain</span>
+                        </div>
+                    ) : (
+                        <div className="px-[3rem] max-md:px-[1rem] h-[4.75rem] max-md:h-[2.5rem] font-[600] text-[1.875rem] text-[#13151d] flex justify-center items-center rounded-[6.25rem] bg-[#f5f5f5]">Blockchain</div>
+                    )
+                }
+
+                {/* {
                     activeItem.category === 5 ? (
                         <div className="pr-[3rem] pl-[5rem] max-md:px-[1rem] h-[4.75rem] max-md:h-[2.5rem] font-[600] text-[1.875rem] text-[#13151d] flex justify-center items-center rounded-[6.25rem] relative" style={{ backgroundColor: activeItem.color }}>
                             
@@ -210,7 +249,7 @@ function Hero() {
                     ) : (
                         <div className="px-[3rem] max-md:px-[1rem] h-[4.75rem] max-md:h-[2.5rem] font-[600] text-[1.875rem] text-[#13151d] flex justify-center items-center rounded-[6.25rem] bg-[#f5f5f5]">Blockchain</div>
                     )
-                }
+                } */}
                 
                 <div className="px-[3rem] max-md:px-[1rem] h-[4.75rem] max-md:h-[2.5rem] font-[600] text-[1.875rem] text-[#13151d] flex justify-center items-center rounded-[6.25rem] bg-[#f5f5f5]">и другие отрасли</div>
             </div>
