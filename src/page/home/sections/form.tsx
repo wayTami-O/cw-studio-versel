@@ -91,9 +91,9 @@ function ContactForm() {
                         }}
                     >
                         {({ values, handleChange, errors, touched }) => (
-                            <Form className="grid grid-cols-2 gap-[1.5rem] max-md:grid-cols-1">
+                            <Form className="grid grid-cols-2 gap-[1.5rem]">
                                 {/* Name */}
-                                <label className="h-[4.25rem] relative flex items-center w-full">
+                                <label className="h-[4.25rem] relative flex items-center w-full max-md:col-span-2">
                                     <Field
                                         type="text"
                                         name="name"
@@ -119,7 +119,7 @@ function ContactForm() {
                                 </label>
 
                                 {/* Email */}
-                                <label className="h-[4.25rem] relative flex items-center w-full">
+                                <label className="h-[4.25rem] relative flex items-center w-full max-md:col-span-2">
                                     <Field
                                         type="text"
                                         name="email"
@@ -145,7 +145,7 @@ function ContactForm() {
                                 </label>
 
                                 {/* Telegram */}
-                                <label className="h-[4.25rem] relative flex items-center w-full col-span-2">
+                                <label className="h-[4.25rem] relative flex items-center w-full col-span-2 max-md:col-span-2">
                                     <Field
                                         type="text"
                                         name="telegram"
@@ -171,7 +171,7 @@ function ContactForm() {
                                 </label>
 
                                 {/* Message */}
-                                <label className="col-span-2 row-span-2 h-full relative flex items-center w-full max-md:col-span-1">
+                                <label className="col-span-2 row-span-2 h-full relative flex items-center w-full max-md:col-span-2">
                                     <Field
                                         as="textarea"
                                         name="message"
