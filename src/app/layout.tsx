@@ -17,43 +17,9 @@ export async function generateMetadata(
 ): Promise<Metadata> {
 
   return {
-    title: "DCL App",
-    description: "Default template",
-    authors: {
-      name: "DCiel",
-      url: "https://github.com/faes763"
-    },
-    creator: "dciel",
-    openGraph: {
-      title: "DCL App",
-      description: "Default template",
-      siteName: "DCiel",
-      locale: "ru-RU",
-      type: "website",
-      images: "https://2049token.fun/other/opengraph.jpg",
-    },
-    robots: {
-      index: false,
-      follow: false,
-      nocache: true,
-      googleBot: {
-        index: false,
-        follow: false,
-        noimageindex: true,
-        'max-video-preview': -1,
-        'max-image-preview': 'large',
-        'max-snippet': -1,
-      },
-    },
-    // appLinks: {
-    //   web: {
-    //     url: "https://2049token.fun/",
-    //     should_fallback: true,
-    //   }
-    // },
-    category: 'technology',
-    bookmarks: ["https://nextjs.org/blog/next-15","https://zustand.docs.pmnd.rs/guides/tutorial-tic-tac-toe","https://ui.shadcn.com/docs",],
-
+    title: "CW STUDIO",
+    description: "CW STUDIO - студия разработки сайтов и приложений",
+    creator: "CW STUDIO",
   }
 }
 

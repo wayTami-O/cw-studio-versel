@@ -22,13 +22,13 @@ function Burger({ open, onClose } : { open: boolean, onClose: () => void }) {
                             <a href="#contact-form" onClick={handleLinkClick} className="min-w-fit bg-[#13151d] px-[2rem] rounded-[0.75rem] flex items-center h-[4.25rem] text-white text-[1.125rem] w-fit max-md:w-full max-md:justify-center hover:bg-[#313131] transition-all ease-out duration-300 cursor-pointer">Обсудить проект</a>
                             <div className="flex items-center gap-[1rem]">
                                 <Image 
-                                    src={'./svg5.svg'}
+                                    src={'/lev.jpg'}
                                     alt=""
                                     width={60}
                                     height={60}
-                                    className="w-[3.5rem] h-[3.5rem]"
+                                    className="w-[3.5rem] h-[3.5rem] rounded-full object-cover"
                                 />
-                                <p className="text-[1.25rem] leading-[1.625rem] tracking-[-.03em] max-md:text-[1.125rem] max-md:leading-[1.375rem]">или напишите нашему аккаунт директору в <span className="text-[#8b73ff]"><a href="https://t.me/lev_budko" target="_blank">телеграмм</a></span></p>
+                                <p className="text-[1.25rem] leading-[1.625rem] tracking-[-.03em] max-md:text-[1.125rem] max-md:leading-[1.375rem]">или напишите директору в <span className="text-[#8b73ff]"><a href="https://t.me/lev_budko" target="_blank">телеграм</a></span></p>
                             </div>
                         </div>
                         <div className="flex items-center gap-[2rem] max-md:flex-col">
@@ -40,8 +40,7 @@ function Burger({ open, onClose } : { open: boolean, onClose: () => void }) {
                                 </div>
                             </a>
                             <div className="flex flex-col gap-[0.25rem]">
-                                <a href="#" className="text-[1.125rem] text-[#13151db3] max-md:text-[0.875rem] max-md:leading-[1.125rem]">email@gmail.com</a>
-                                <a href="#" className="text-[1.125rem] text-[#13151db3] max-md:text-[0.875rem] max-md:leading-[1.125rem]">929</a>
+                                <a href="#" className="text-[1.125rem] text-[#13151db3] max-md:text-[0.875rem] max-md:leading-[1.125rem]">lev.work.004@gmail.com</a>
                             </div>
                         </div>
                     </div>

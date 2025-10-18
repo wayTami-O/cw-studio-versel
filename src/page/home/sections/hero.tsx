@@ -128,7 +128,6 @@ export function useHeroAnim(array: IHeroAnim[], delay: number) {
             setArrayColors(updatedArray);
             setActiveItem(updatedArray[currentIndex]);
     
-            console.log("Active index:", currentIndex);
         }, delay);
 
         return () => clearInterval(interval);
@@ -145,7 +144,7 @@ function Hero() {
 
     return (
         <div className="pt-[6.25rem] h-[100dvh] max-md:h-fit container-no-margin flex flex-col justify-center gap-[2rem]">
-            <h1 className="max-w-[78.75rem] text-[5rem] max-md:text-[2.5rem] font-gilroy font-[600] leading-[5.5rem] max-md:leading-[3rem] tracking-[-.03em]">Создаем эффективные цифровые продукты, которые работают</h1>
+            <h1 className="max-w-[78.75rem] text-[5rem] max-md:text-[2.5rem] font-gilroy font-[600] leading-[5.5rem] max-md:leading-[3rem] tracking-[-.03em]">Приводим клиентов через сайты</h1>
             <div className="flex items-center gap-[1rem] max-md:flex-wrap">
                 {
                     activeItem.category === 1 ? (
