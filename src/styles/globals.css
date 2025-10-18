@@ -108,11 +108,11 @@ a {
   font-weight: 800;
 }
 
-/* .container {
-  @apply mt-[7.5rem] mx-auto max-w-[95rem] max-md:px-[1rem] px-0;
-} */
-
 .container {
+  @apply mt-[7.5rem] mx-auto max-w-[95rem] max-md:px-[1rem] px-0;
+}
+
+/* .container {
   @apply mt-[7.5rem] mx-auto max-w-[95rem] px-[1rem];
 }
 
@@ -120,7 +120,7 @@ a {
   .container {
     @apply px-0;
   }
-}
+} */
 
 
 
@@ -146,6 +146,7 @@ a {
 @layer base {
   * {
     /* @apply border-border; */
+    box-sizing: border-box;
   }
   body {
     @apply p-0 m-0;
