@@ -141,12 +141,15 @@ a {
   scrollbar-width: none;  /* Firefox */
 }
 
-
+button {
+  outline: none;
+}
 
 @layer base {
   * {
     /* @apply border-border; */
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
   }
   body {
     @apply p-0 m-0;

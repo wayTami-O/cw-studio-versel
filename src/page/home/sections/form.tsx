@@ -255,7 +255,7 @@ function ContactForm() {
                                     <button 
                                         type="submit"
                                         disabled={isSubmitting}
-                                        className={`min-w-fit px-[2rem] rounded-[0.75rem] flex items-center h-[4.25rem] text-white text-[1.125rem] w-fit max-md:w-full max-md:justify-center transition-all ease-out duration-300 cursor-pointer ${
+                                        className={`min-w-fit px-[2rem] rounded-[0.75rem] flex items-center h-[4.25rem] text-white text-[1.125rem] w-fit max-md:w-full max-md:justify-center transition-all ease-out duration-300 cursor-pointer outline-none focus:outline-none focus:ring-0 border-none focus:border-none ${
                                             isSubmitting 
                                                 ? 'bg-gray-400 cursor-not-allowed' 
                                                 : submitStatus === 'success' 
